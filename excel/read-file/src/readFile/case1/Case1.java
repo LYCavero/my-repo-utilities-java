@@ -22,18 +22,10 @@ public class Case1 {
          * If the file is on the classpath, use "/" first followed the file path.
          * Otherwise, use only the file path
          */
-        String filePath = "/readFile/case1/Excel.xlsx";
+        String filePath = "/readFile/case1/Case1.xlsx";
 
         // Get excel file of designed route
         Workbook workbook = ExcelUtil.getWorkbook(filePath);
-
-        Sheet sheat = workbook.createSheet("haber");
-
-        Row row = sheat.getRow(0);
-
-        Cell cell = row.getCell(0);
-
-        System.out.println("Nombre de la hoja: " + sheat);
 
     }
 
